@@ -1,5 +1,5 @@
 # SpamMAIL-NR
-### Herramienta desarrollada con el fin de poder acortar tus propios enlaces con mas de un serviocio disponible, pasar las URLs a codigo QR y  escanear las que te parezcan sospechosas.
+### Herramienta desarrollada con el fin de poder acortar tus propios enlaces con mas de un servicio disponible, pasar las URLs a codigo QR y  escanear las que te parezcan sospechosas.
 
 ------------
 
