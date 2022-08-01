@@ -44,7 +44,7 @@ def short_url():
         try:
             process_url_short = obj_short.chilpit.short(no_process_url_short)
         except:
-            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
             call(command_clear, shell=True)
             short_url()
@@ -60,7 +60,7 @@ def short_url():
             process_url_short = obj_short.clckru.short(no_process_url_short)
         
         except:
-            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
             call(command_clear, shell=True)
             short_url()
@@ -77,7 +77,7 @@ def short_url():
             process_url_short = obj_short.dagd.short(no_process_url_short)
         
         except:
-            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
             call(command_clear, shell=True)
             short_url()
@@ -94,7 +94,7 @@ def short_url():
             process_url_short = obj_short.isgd.short(no_process_url_short)
         
         except:
-            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
             call(command_clear, shell=True)
             short_url()
@@ -111,7 +111,7 @@ def short_url():
        	    process_url_short = obj_short.osdb.short(no_process_url_short)
         
         except:
-            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
             call(command_clear, shell=True)
             short_url()
