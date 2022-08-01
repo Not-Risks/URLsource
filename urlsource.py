@@ -41,7 +41,13 @@ def short_url():
     if option_shorturl == "01" or option_shorturl == "1":
         print(f.YELLOW + "\n========================================>>\n" + f.GREEN + "Introduzca la URL a acortar" + f.YELLOW + "\n========================================>>")
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
-        process_url_short = obj_short.chilpit.short(no_process_url_short)
+        try:
+            process_url_short = obj_short.chilpit.short(no_process_url_short)
+        except:
+            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            input()
+            call(command_clear, shell=True)
+            short_url()
         print(f.YELLOW + "\n[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " La URL acortada por Chilp.it: " + f.RED + process_url_short)
         input(f.YELLOW + "[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " Precione" + f.RED + " ENTER " + f.GREEN + "para volver al inicio.")
         cuestions_initials()
@@ -49,7 +55,16 @@ def short_url():
     elif option_shorturl == "02" or option_shorturl == "2":
         print(f.YELLOW + "\n========================================>>\n" + f.GREEN + "Introduzca la URL a acortar" + f.YELLOW + "\n========================================>>")
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
-        process_url_short = obj_short.clckru.short(no_process_url_short)
+        
+        try:
+            process_url_short = obj_short.clckru.short(no_process_url_short)
+        
+        except:
+            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            input()
+            call(command_clear, shell=True)
+            short_url()
+            
         print(f.YELLOW + "\n[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " La URL acortada por Clck.ru: " + f.RED + process_url_short)
         input(f.YELLOW + "[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " Precione" + f.RED + " ENTER " + f.GREEN + "para volver al inicio.")
         cuestions_initials()
@@ -57,7 +72,16 @@ def short_url():
     elif option_shorturl == "03" or option_shorturl == "3":
         print(f.YELLOW + "\n========================================>>\n" + f.GREEN + "Introduzca la URL a acortar" + f.YELLOW + "\n========================================>>")
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
-        process_url_short = obj_short.dagd.short(no_process_url_short)
+        
+        try:
+            process_url_short = obj_short.dagd.short(no_process_url_short)
+        
+        except:
+            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            input()
+            call(command_clear, shell=True)
+            short_url()
+            
         print(f.YELLOW + "\n[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " La URL acortada por Da.gd: " + f.RED + process_url_short)
         input(f.YELLOW + "[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " Precione" + f.RED + " ENTER " + f.GREEN + "para volver al inicio.")
         cuestions_initials()
@@ -65,7 +89,16 @@ def short_url():
     elif option_shorturl == "04" or option_shorturl == "4":
         print(f.YELLOW + "\n========================================>>\n" + f.GREEN + "Introduzca la URL a acortar" + f.YELLOW + "\n========================================>>")
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
-        process_url_short = obj_short.isgd.short(no_process_url_short)
+        
+        try:
+            process_url_short = obj_short.isgd.short(no_process_url_short)
+        
+        except:
+            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            input()
+            call(command_clear, shell=True)
+            short_url()
+            
         print(f.YELLOW + "\n[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " La URL acortada por Is.gd: " + f.RED + process_url_short)
         input(f.YELLOW + "[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " Precione" + f.RED + " ENTER " + f.GREEN + "para volver al inicio.")
         cuestions_initials()
@@ -73,7 +106,16 @@ def short_url():
     elif option_shorturl == "05" or option_shorturl == "5":
         print(f.YELLOW + "\n========================================>>\n" + f.GREEN + "Introduzca la URL a acortar" + f.YELLOW + "\n========================================>>")
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
-       	process_url_short = obj_short.osdb.short(no_process_url_short)
+        
+        try:
+       	    process_url_short = obj_short.osdb.short(no_process_url_short)
+        
+        except:
+            print("[!] Este servicio no esta disponible ahoro, pruebe con otro, precione ENTER para continuar")
+            input()
+            call(command_clear, shell=True)
+            short_url()
+            
         print(f.YELLOW + "\n[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " La URL acortada por Os.db: " + f.RED + process_url_short)
         input(f.YELLOW + "[" + f.RED + "!" + f.YELLOW + "]" + f.GREEN + " Precione" + f.RED + " ENTER " + f.GREEN + "para volver al inicio.")
         cuestions_initials()
