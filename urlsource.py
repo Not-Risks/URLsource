@@ -35,6 +35,8 @@ def short_url():
     print(f.YELLOW + "[" + f.RED + "03" + f.YELLOW + "]-" + f.GREEN + "Da.gd" + f.YELLOW + "            [" + f.RED + "04" + f.YELLOW + "]-" + f.GREEN + "Is.gd") 
     print(f.YELLOW + "[" + f.RED + "05" + f.YELLOW + "]-" + f.GREEN + "Os.db" + f.YELLOW + "            [" + f.RED + "06" + f.YELLOW + "]-" + f.GREEN + "Salir")
     option_shorturl = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
+    word_add = input(f.GREEN + "\nPalabra para agregar" + f.RED + ">> ")
+    word_add = word_add + "@"
 
     obj_short = Shortener()
     
@@ -43,6 +45,8 @@ def short_url():
         no_process_url_short = input(f.YELLOW + "[" + f.RED + "URLsource" + f.YELLOW + "]" + f.GREEN + ">> ")
         try:
             process_url_short = obj_short.chilpit.short(no_process_url_short)
+            process_url_short = process_url_short.replace("http://", f"http://{word_add}")
+            
         except:
             print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
             input()
@@ -58,6 +62,7 @@ def short_url():
         
         try:
             process_url_short = obj_short.clckru.short(no_process_url_short)
+            process_url_short = process_url_short.replace("https://", f"https://{word_add}")
         
         except:
             print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
@@ -75,6 +80,7 @@ def short_url():
         
         try:
             process_url_short = obj_short.dagd.short(no_process_url_short)
+            process_url_short = process_url_short.replace("https://", f"https://{word_add}")
         
         except:
             print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
@@ -92,6 +98,7 @@ def short_url():
         
         try:
             process_url_short = obj_short.isgd.short(no_process_url_short)
+            process_url_short = process_url_short.replace("https://", f"https://{word_add}")
         
         except:
             print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
@@ -109,6 +116,7 @@ def short_url():
         
         try:
        	    process_url_short = obj_short.osdb.short(no_process_url_short)
+            process_url_short = process_url_short.replace("http://", f"http://{word_add}")
         
         except:
             print("\n[!] Este servicio no esta disponible ahora, pruebe con otro, precione ENTER para continuar")
