@@ -24,7 +24,7 @@ def banner():
     print(f.YELLOW + "┈" + f.RED + "━╋━┻━┻╋━" + f.YELLOW + "┈┈╭---[NOT-RISKS]")
     print(f.YELLOW + "┈" + f.RED + "╭┫" + f.YELLOW + "▊┃┃▊" + f.RED + "┣╮" + f.YELLOW + "┈╭╯")
     print(f.YELLOW + "┈" + f.RED + "┃┃" + f.YELLOW + "▔" + f.RED + "╰╯" + f.YELLOW + "▔" + f.RED + "┃┃" + f.YELLOW + "╭╯-----[VERSION_v1]")
-    print(f.YELLOW + "┈" + f.RED + "╰┫┏━━▂▂▂█")
+    print(f.YELLOW + "┈" + f.RED + "╰┫┏━━▂▂▂█   [Telegram: t.me/hackersAsperger]")
     print(f.YELLOW + "┈┈" + f.RED + "╭╰━━╯╮")
 
 # ==================/To shorten url // Acortar url/==================
